@@ -1,0 +1,258 @@
+@charset "UTF-8";
+* {
+  font-family: reitam, 游ゴシック体, "Yu Gothic", YuGothic,
+    "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo,
+    Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  color: #000;
+  background: #ecece7;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 11.125px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.section-ttl {
+  font-size: 47.123px;
+  font-weight: bold;
+  color: #c9171e;
+}
+
+/* ---------- header ---------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 56px;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px 0;
+}
+
+.header__nav {
+  display: flex;
+  text-align: center;
+}
+
+.header__nav-list {
+  margin-left: 16px;
+}
+
+.header__nav-item {
+  color: #a28d69;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__nav-item:hover {
+  opacity: 0.7;
+}
+
+/* ---------- footer ---------- */
+.footer {
+  position: fixed;
+  bottom: 0;
+  border: 1px solid #a28d69;
+  background-color: #a28d69;
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+}
+
+.about__link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.link-img {
+  width: 48px;
+  display: block;
+}
+
+.footer__copyright {
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+
+/* ---------- main ---------- */
+.main {
+  padding-top: 72px;
+  padding-bottom: 88px;
+}
+
+/* ---------- top-container ---------- */
+.top-container {
+  max-width: 1080px;
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* mv */
+.mv {
+  padding: 200px 0;
+}
+.mv__content-name {
+  /* ここだけはもう黄金比無視 */
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.mv__content-txt {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+/* ---------- works__section ---------- */
+
+/* ----------about__section ---------- */
+.about__section-txt {
+  margin-top: 56px;
+}
+
+.about__my-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about__my-name,
+.about__profile-ttl {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about__profile-ttl {
+  margin-top: 56px;
+}
+
+.about__my-job {
+  padding: 8px 16px;
+  border-left: 1px solid #a28d69;
+  font-weight: bold;
+}
+
+.about__profile-txt {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.about__profile-content {
+  margin-top: 56px;
+  text-align: left;
+}
+
+.about__profile-desc {
+  line-height: 3;
+}
+
+/*---------- span ----------- */
+
+/* ------------------------------ */
+
+.about__btn-wrapper {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.about__btn-more,
+input[type="submit"] {
+  border: 1px solid #a28d69;
+  background-color: #a28d69;
+  padding: 20px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.about__btn-more:hover,
+input[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+/* ----------contact__section---------- */
+.contact__section-txt {
+  margin-top: 56px;
+  line-height: 3;
+}
+.contact__form-txt-span {
+  margin-top: 32px;
+  display: block;
+}
+/* ---------- form ---------- */
+form {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.form-row {
+  margin-top: 32px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 1rem;
+  width: 70%;
+  font-weight: bold;
+  border: 1px solid #a28d69;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+.contact__form-content {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 70%;
+}
